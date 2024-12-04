@@ -7,11 +7,13 @@ import EditProduct from './components/EditProduct';
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<ProductList />} />
-        <Route path="/add" element={<AddProduct />} />
-        <Route path="/edit/:id" element={<EditProduct />} />
-      </Routes>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={<ProductList />} />
+          <Route path="/add" element={<AddProduct />} />
+          <Route path="/edit/:id" element={<EditProduct />} />
+        </Routes>
+      </div>
     </Router>
   );
 };
